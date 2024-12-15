@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "scrappedideas",
+	"version": "${version}",
+	"name": "Scrapped Ideas",
+	"description": "This Mod aims to bring the Scrapped Ideas by Mojang!",
+	"authors": [
+		"Fearnot"
+	],
+	"contact": {
+		"homepage": "https://github.com/Gabrielzagoat/Scrapped-Ideas-Fabric.git",
+		"sources": "https://github.com/Gabrielzagoat/Scrapped-Ideas-Fabric.git"
+	},
+	"license": "MIT",
+	"icon": "assets/scrappedideas/icon.jpg",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.fearnot.scrappedideas.ScrappedIdeas"
+		],
+		"fabric-datagen": [
+			"net.fearnot.scrappedideas.ScrappedIdeasDataGenerator"
+		],
+		"client": [
+			"net.fearnot.scrappedideas.ScrappedIdeasClient"
+		]
+	},
+	"mixins": [
+		"scrappedideas.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
